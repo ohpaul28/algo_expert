@@ -44,3 +44,23 @@ function tournamentWinner(competitions, results) {
 }
 
 
+
+
+function twoNumberSum(array, targetSum) {
+  // Write your code here.
+
+  // create an empty array to return
+  // create a nested loop for the array to see if any two indices reach the targetSum
+
+  let answer = [];
+  for (let i = 0; i < array.length; i++) {
+    for (let j = i + 1; j < array.length; j++) {
+      if(array[i] + array[j] === targetSum) {
+        answer.push(array[i])
+        answer.push(array[j])
+      }
+    }
+  }
+  return answer;
+}
+
