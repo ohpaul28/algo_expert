@@ -63,4 +63,3 @@ function twoNumberSum(array, targetSum) {
   }
   return answer;
 }
-
